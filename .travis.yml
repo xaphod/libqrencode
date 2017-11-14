@@ -9,11 +9,10 @@ before_install:
 - sudo apt-get update
 - sudo apt-get install libpng12-dev
 - sudo apt-get install binutils-mingw-w64-i686 gcc-mingw-w64-i686
-- export CC=i686-w64-mingw32-gcc
 
 install:
 - ./autogen.sh
-- ./configure --with-tests && make
+- ./configure --host=x86_64-w64-mingw32 --with-tests && make
 - sudo make install
 - mkdir build && cd build
 - cmake .. -DWITH_TESTS=yes -DBUILD_SHARED_LIBS=on && make
