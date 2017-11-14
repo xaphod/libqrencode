@@ -120,7 +120,7 @@ configure_file(libqrencode.pc.in libqrencode.pc @ONLY)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/qrencode.1 DESTINATION share/man/man1)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/libqrencode.pc DESTINATION lib/pkgconfig)
 install(FILES qrencode.h DESTINATION include)
-install(TARGETS qrencode DESTINATION lib)
+install(TARGETS qrencode DESTINATION lib RUNTIME DESTINATION bin)
 
 ## Build utility tools
 if(WITH_TOOLS AND TARGET PNG::PNG)

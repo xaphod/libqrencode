@@ -1,3 +1,8 @@
+2017.11.14 Kentaro Fukuchi <kentaro@fukuchi.org>
+	* CMakeLists.txt:
+	  - RUNTIME DESTINATION is set to 'bin'. (closes #112)(Thanks to
+	    @tonytheodore)
+
 2017.10.20 Kentaro Fukuchi <kentaro@fukuchi.org>
 	[master]
 	* qrenc.c:
