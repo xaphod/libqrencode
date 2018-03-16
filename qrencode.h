@@ -1,3 +1,9 @@
+#define STATIC_IN_RELEASE static
+#define MAJOR_VERSION 1
+#define MINOR_VERSION 0
+#define MICRO_VERSION 0
+#define VERSION 1
+
 /**
  * qrencode - QR Code encoder
  *
